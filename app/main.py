@@ -14,3 +14,4 @@ app.include_router(v1_router, prefix="/api/v1", tags=["V1"])
 @app.get("/", tags=["Health Check"])
 async def root():
     return {"status": "alive", "message": "Vibe QR Service is running"}
+# uvicorn app.main:app --reload 
